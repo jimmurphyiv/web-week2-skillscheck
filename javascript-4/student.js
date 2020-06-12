@@ -5,7 +5,7 @@
 // Create a new array called 'faveColors' and assign it a value of your three favorite colors as strings.
 
 // CODE HERE
-
+let faveColors = 'blue, green, gray';
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstName, superHeroName, homeTown, superPowers, superPowerXP, and profileImage. 
 
@@ -22,7 +22,14 @@
 // The profileImage key value should be a method that returns this url `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`.
 
 // CODE HERE
-
+me = {
+    firstName: 'Jim',
+    superHeroName: "Captian Code Man",
+    homeTown: "Cleves, Ohio",
+    superPowers: "Decipher Any Code within Seconds",
+    superPowerXP: "Any time the word invoke is used",
+    profileImage: ' '
+}
 //////////////////Step 3////////////////////
 // In this step, you will create three variables that will hold some data from your me object. The first variable you create should be 'regularName', and it should receive its value from the value of your firstName key on the me object above. The next variable is 'superName' which should have its value assigned as the value of the superHeroName property on the me object. The last variable you should create is 'homeTown' which will be the value of homeTown on the me object
 
