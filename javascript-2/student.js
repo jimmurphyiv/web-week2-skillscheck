@@ -28,7 +28,7 @@ let phrase = " ";
 
 	if( lovesCode === true){
         return "I love code";
-	}else ( lovesCode != true)
+	}else ( lovesCode === false)
 		return " I do not love to code";
 	
 //////////////////Wrap Up////////////////////

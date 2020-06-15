@@ -1,37 +1,50 @@
 body {
     
     height: 100vh;
-    background:whitesmoke;
-}
-
-#main {
-    height: 55px;
-    width: 100%;
-    background: gray;
-    display: flexbox;
-    box-sizing: border-box;
+    background:white;
     
-
 }
 
-
-h1 {
-    height: 25px;
-    color: white;
+#main-header {
+    height:60px;
+    width: 100%;
+    background-color: lightslategray;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align-last: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    
 }
 
-nav {
+.logo {
+    font-size: 45px;
+    color: white;
+    box-sizing: border-box;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    width: 50%;
+    font-size: 15px;
     color: white;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
-    align-items: center; 
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 25px;
 }
 
+.top-content div{
+    color: rgb(238, 236, 113);
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px;
+    position: relative;
+
+}
 .top-content {
     height: 200px;
     width: 100%;
@@ -40,48 +53,54 @@ nav {
     color: lightyellow;
     background-color: black;
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
 }
 
 .box-main {
     display: flex;
     flex-wrap:  wrap;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .first-box-row {
     height: 175px;
     width: 175px;
     margin:  25px;
-    background: teal;
+    background: rgb(152, 247, 207);
     box-sizing: border-box;
-    border: 1px solid black;
     border-radius: 10px;
     flex-direction: row;
+    position: relative;
     
 }
 
 .second-box-row {
     height: 150px;
-    width: 325px;
-    background: yellow;
+    width: 42%;
+    background: rgb(247, 185, 114);
     box-sizing: border-box;
     flex-direction: row;
+    
+    
 }
  
 .third-box-row {
-    height: 150px;
-    width: 325px;
-    background: whitesmoke;
+    height: 100px;
+    width: 300px;
+    background-image: url('https://www.pexels.com/photo/nature-sky-sunset-the-mountains-66997/');
+    background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    border: 1px solid black;
     flex-direction: row;
-
+    margin: 25px;
+    font-size: small;
+    
 }
 
-
 footer {
-    height: 75vh;
+    height: 100px;
     width: 100%;
     background: purple;
     box-sizing: border-box;

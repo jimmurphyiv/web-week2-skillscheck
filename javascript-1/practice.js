@@ -41,18 +41,11 @@ function lovesCodeChecker(x) {
 // Create a function called 'oddChecker' that takes in one parameter, 'num'. Your function should check to see if the parameter is even or odd. If the parameter is odd, return 'the number is odd'. If the number is even, return 'the number is even'.
 
 //Code here
-// function oddChecker(num); {
-// for(let i = 1; num <  arr.length; i++ )
-// 	if ( num === 1){
-// 		return 'the number is odd';
-// 	}else if ( num % 3 === 1)
-// 		return 'the number is odd';
-// 	else { return ' the number is even'
-
-// 	}
-
-// work in progress...
-
+function oddChecker(num); {
+ for(let i = 1; num <  arr.length; i++ ){
+		return ( num & 1 ) ? "odd" : "even";
+	}
+}
 //////////////////PROBLEM 7////////////////////
 
 // Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. Have the function take the two parameters and return a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
@@ -88,30 +81,60 @@ let middleNums = numbers.splice(1,3);
 
 // Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string. The value of the property state should be your current state or providence of residence as a string. The value of age should be your age as a number. greeter should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
 
-// //Code Here
-// let me = {
-// 	firsName: 'Jim',
-// 	state: 'Indiana',
-// 	age: 39,
-// 	greeter: function() {
-// 		return 'Hello! My name is firstName and I live in state';
-// 	} 
-// }
-
+//Code Here
+let me = {
+	firsName: 'Jim',
+	state: 'Indiana',
+	age: 39,
+	greeter: function() {
+		return `Hello! My name is ${this.firstName} and I live in ${this.state}`;
+		
+	} 
+}
+me.greeter()
 //////////////////PROBLEM 12////////////////////
 
-// Create a function called 'bigOrSmall' that takes in one parameter, 'arr', which will be an array of numbers. Inside of the bigOrSmall function, create a new array called 'answers'. Then, loop over the passed in arr parameter, and check to see if the number in the array is GREATER than 100. If it is, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function.
+// Create a function called 'bigOrSmall' that takes in one parameter, 'arr', which will be an array of numbers. 
+// Inside of the bigOrSmall function, create a new array called 'answers'. Then, loop over the passed in arr parameter, 
+// and check to see if the number in the array is GREATER than 100. If it is, push 'big' as a string to the answers array. 
+// If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function.
 
 // Code here
-function bigOrSmall(arr) {
 
+
+function bigOrSmall(arr) {
+	let answers = []
+	for (let i = 0; i < arr.length; i++) {
+        let value = arr[i]
+	if(value <= 100 ){
+            answers.push('small')
+    }else {
+            answers.push('big')
+        }
+        	
+	}
+	
+    return answers
 }
+
+let arrOne = [20, 40, 100, 120, 140];	
+bigOrSmall(arrOne)
+
+
+
 //////////////////PROBLEM 13////////////////////
 
 // Create a function called 'arrayReverser' that takes in one parameter, 'arr'. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array IN REVERSE (this means your counter should decrement), and then add each item to the 'reversed' array variable you created. Finally, return the 'reversed' array variable. 
 
 //Code Here
-
+function arrayReverser(arr){
+	let reversed = []
+	for (let arr = array.length; arr < 0; arr--) {
+		let value = arr[i]
+			
+	}
+	return reversed(arr)
+}
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. You will be using .map, .filter, .reduce and .forEach to manipulate the array in the following problems.
@@ -147,7 +170,10 @@ let total = myNumbers.reduce(function(acc, curr){
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
-// let myNumbersIndex = myNumbers.forEach(myNumbers: numbers, [] )
+let myNumbersIndex = myNumbers.forEach(cb[i[arr]]
+
+)
+
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
@@ -170,12 +196,11 @@ const people = [
 ]
 
 // Code Here
-let enemies = peoeple.filter(function(element: ){
-	element - enemies
-})
+enemies = people.filter(function()
+)
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-let totallyAwesome = people.reduce
+let totallyAwesome = people.reduce(name.friend[awesomeLevel]);

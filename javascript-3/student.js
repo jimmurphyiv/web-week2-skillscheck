@@ -23,17 +23,35 @@ function setGroceryListTitle(x) {
 
 // Code Here
 function addItem(item){
-    return 
+    return item.push[groceries]
 }
 //////////////////STEP 5////////////////////
 //Create a function called 'removeItem' that takes in one parameter called 'index'. Inside of the removeItem function, remove the item that corresponds to the index parameter from the groceries array above by using splice. Then, invoke the displayData() function inside of your removeItem function.
 
 // Code Here
-
+function removeItem(index){
+    return groceries.splice[0,2];
+}
 //////////////////STEP 6////////////////////
-//Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, you're going to check the total number of groceries in your groceries array using .length. Using an if/else statement, check if the number of groceries is greater than or equal to 5. If it is, return the string 'That looks like a big trip' from the function. If the number of groceries is equal to one, return the string '1 item'. If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
+//Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, you're going to check the total number of groceries
+// in your groceries array using .length. Using an if/else statement, check if the number of groceries is greater than or equal to 5.
+// If it is, return the string 'That looks like a big trip' from the function. If the number of groceries is equal to one, 
+//return the string '1 item'. If the amount of groceries is between 1 and 5, return the string 
+//'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 
 // Code Here
-
+function checkGroceryCountlet {
+    groceries = []
+for (let i = 0; i < arr.length; i++) {
+    let value = arr[i]
+if(value <= 5 ){
+    groceries.push('That looks like a big trip')
+}else {
+    groceries.push('NUMBEROFGROCERIES items')
+    }
+        
+}
+return NUMBEROFGROCERIES
+}
 //////////////////STEP 6////////////////////
 // Refresh the index.html page. You should now see the same thing you saw when you first loaded the page but you should now be able to add items to your grocery list with a dynamic total showing. If you double click on an item, it should remove that item
